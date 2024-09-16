@@ -1,43 +1,99 @@
-# Getting Started with Create React App
+# PanelVista
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Overview
+**PanelVista** is a comprehensive admin dashboard built using ReactJS and MongoDB, designed to streamline the management of products, users, and website analytics. The project showcases my technical proficiency in frontend development and data handling, providing administrators with a powerful tool for managing eCommerce operations efficiently. PanelVista simplifies complex tasks such as tracking sales, monitoring user engagement, and generating product statistics, ensuring flexibility and scalability for growing businesses.
 
-## Available Scripts
+## 📝 Table of Contents
+- [Installation](#⚙️installation)
+- [Technologies Used](#technologies-used)
+- [Steps](#steps)
+- [Features](#features)
+- [Dependencies](#dependencies)
 
-In the project directory, you can run:
+## ⚙️ Installation
+Follow these steps to get a local copy of the project up and running on your machine.
 
-### `npm start`
+### Prerequisites
+Ensure you have the following software/tools installed:
+- **Node.js** (v14.x or higher) - [Download and Install Node.js](https://nodejs.org/)
+- **npm** (v6.x or higher) - Installed automatically with Node.js
+- **MongoDB** (v4.x or higher) - [Download and Install MongoDB](https://www.mongodb.com/try/download/community)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Technologies
+  The project is built using a modern tech stack, ensuring a responsive,         scalable, and efficient admin dashboard. Below are the key technologies used:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend:** HTML, CSS, JavaScript, ReactJS
+- **Backend:** MongoDB
+- **Authentication:** JWT
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Steps
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/project-name.git
+   cd project-name
+   ```
+2.  Install the dependencies:
+    ```bash
+    npm install
+    ```
+3. Set up environment variables:<br>
+    Set up environment variables: Create a .env file in the root directory with       the following content:
+    ```bash
+    MONGO_URI=<Your MongoDB URI>
+    ```
+4. Start the frontend development server:
+   ```bash
+   npm start
+   ```
+5. Access the Application: Once both the backend and frontend servers are            running, open your browser and go to:
+   ```bash
+   http://localhost:3000/
+   ```
 
-### `npm run build`
+## ✨ Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **User & Product Management**: Seamlessly manage users and products, including adding, updating, and deleting records.
+  
+- **Analytics Dashboard**: Real-time statistics on sales, active users, and product performance, offering insights through data visualizations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Responsive Design**: Fully responsive layout ensuring the dashboard works smoothly on any device.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Authentication & Authorization**: Secure login and access control for admins using JWT authentication.
 
-### `npm run eject`
+- **Data Provider Integration**: Efficient data fetching and state management using React’s Context API and hooks.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Intuitive User Interface**: Clean, modern UI with intuitive navigation for managing eCommerce operations effortlessly.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📦 Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The project utilizes various dependencies across different parts of the application. Below is a list of the key dependencies and where they are used.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Backend (MongoDB)
+The backend handles data storage, retrieval, and API requests. Key dependencies include:
+
+- **mongoose**: ODM library for MongoDB, used for database interaction.
+- **dotenv**: Loads environment variables from `.env` file.
+- **bcryptjs**: For password hashing to enhance security.
+- **jsonwebtoken**: Handles JWT-based authentication for secure access.
+  
+Install backend dependencies:
+```bash
+npm install mongoose dotenv bcryptjs jsonwebtoken
+```
+
+### Frontend (React.js)
+The frontend of the project is built using React.js. Below are the key dependencies used:
+
+- **react**: JavaScript library for building user interfaces.
+- **jwt-decode**: For decoding JWT tokens on the frontend.
+- **react-router-dom**: For handling navigation and routing in the app.
+
+  Install frontend dependencies:
+  ```bash
+  cd client
+  npm install react redux jwt-decode react-router-dom 
+  ```
 
 ## Learn More
 
